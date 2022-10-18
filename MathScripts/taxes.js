@@ -1,0 +1,10 @@
+var taxrate = ".23";
+var randNum = Math.random();
+var bonus = 10000 + (randNum * 5000);
+var income = 100000 + bonus;
+var taxes = income * taxrate;
+var experiment = Math.random();
+var taxes = parseFloat(taxes.toFixed(2));
+var income = parseFloat(income.toFixed(2));
+console.log (experiment);
+console.log ("If your income was " + income + " then your taxes would be " + taxes);
