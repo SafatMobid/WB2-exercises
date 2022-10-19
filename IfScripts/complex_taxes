@@ -1,0 +1,53 @@
+var hoursWorked = 34;
+var payrate = 17.30;
+var maritalStatus = "joint";
+
+if (hoursWorked <= 40)
+{
+    grosspay =  (hoursWorked * payrate)
+}
+
+if (hoursWorked > 40)
+{
+    grosspay = (hoursWorked*payrate)
+    overtime = (hoursWorked - 40)
+    overtimepay = (overtime*payrate)
+    increasePay = (overtimepay*1.5)
+    grosspay = ((40 * payrate) + increasePay)
+}
+var annualincome = grosspay * 52
+
+if (maritalStatus =="single")
+{
+    if (annualincome < 12000 )
+        taxrate = 0.05
+    if (annualincome > 12000 && annualincome < 25000)
+        taxrate = 0.10
+    if (annualincome > 25000 && annualincome < 75000)
+        taxrate = 0.15
+    if (annualincome >= 75000)
+        taxrate = 0.20
+}
+else if (maritalStatus =="joint")
+{
+    if (annualincome < 12000 )
+        taxrate = 0 
+    if (annualincome > 12000 && annualincome < 25000)
+        taxrate = 0.06
+    if (annualincome > 25000 && annualincome < 75000)
+        taxrate = 0.11
+    if (annualincome >= 75000)
+        taxrate = 0.20
+}
+var taxwithheld = grosspay * taxrate
+var netpay = grosspay - taxwithheld
+
+console.log(annualincome)
+console.log(maritalStatus)
+console.log(taxrate)
+console.log(taxwithheld)
+console.log ("You worked " + hoursWorked + " hours this period.");
+console.log ("Because you earn $"+payrate+" per hour, your gross pay is $"+grosspay)
+console.log ("Your filing status is " + maritalStatus)
+console.log ("Your tax withholdings this period is $" + taxwithheld)
+console.log ("Your net pay is $" + netpay)
