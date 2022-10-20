@@ -1,5 +1,5 @@
 var studentName="Betty";
-var studentMajor="BIOL"
+var studentMajor="CSCI"
 
 if (studentMajor=="BIOL" && studentName=="Betty")
 {   

@@ -30,6 +30,4 @@ switch (majorCode)
         location="<Uknown>"
 }
 
-console.log("Student: " + studentName)
-console.log("Major: "+ studentMajor)
-console.log("Advising Location: "+ location)
+console.log("Student: " + studentName + "\n" + "Major: "+ studentMajor + "\n" + "Advising Location: "+ location)
