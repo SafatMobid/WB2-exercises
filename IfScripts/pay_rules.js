@@ -1,15 +1,18 @@
-var hoursWorked = 40;
-var payrate = 25.00;
- 
+var hoursWorked = 20;
+var payrate = 20;
 
 if (hoursWorked <= 40)
 {
-    grosspay =  (hoursWorked * payrate);
+    grosspay =  (hoursWorked * payrate)
 }
 
-else (hoursWorked > 40)
+if (hoursWorked > 40)
 {
-    grosspay = ((hoursWorked*1.5)*payrate);
+    grosspay = (hoursWorked*payrate)
+    overtime = (hoursWorked - 40)
+    overtimepay = (overtime*payrate)
+    increasePay = (overtimepay*1.5)
+    grosspay = ((40 * payrate) + increasePay)
 }
 
 console.log ("if you worked " + hoursWorked + " hours, then you would make $" + grosspay);

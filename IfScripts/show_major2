@@ -1,0 +1,35 @@
+let majorCode = "BIOL";
+let studentName = "John";
+let studentMajor;
+let location;
+
+switch (majorCode) 
+{
+    case "BIOL":
+        studentMajor = "Biology"
+        location = "Advising Location: Science Bldg, Room 310"
+        break;
+    case "CSCI":
+        studentMajor = "Computer Science"
+        location = "Advising Location: Sheppard Hall, Room 314"
+        break;
+    case "ENG":
+        studentMajor = "English"
+        location = "Advising Location: Kerr Hall, Room 201"
+        break;
+    case "HIST":
+        studentMajor = "History"
+        location = "Advising Location: Kerr Hall, Room 114"
+        break;
+    case "MKT":
+        studentMajor = "Marketing"
+        location = "Advising Location: Westly Hall, Room 310"
+        break;
+    default:
+        studentMajor="<Unknown>"
+        location="<Uknown>"
+}
+
+console.log("Student: " + studentName)
+console.log("Major: "+ studentMajor)
+console.log("Advising Location: "+ location)
